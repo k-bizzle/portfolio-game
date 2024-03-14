@@ -1,0 +1,55 @@
+h1 {
+    color:#048034de;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+#slot {
+    border: solid;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border-color: #800404de;
+    background-color: #000000de;
+    color: white;
+
+  }
+  
+  .blink {
+    animation: blink 0.4s infinite alternate;
+    -webkit-animation: blink 0.4s infinite alternate;
+  }
+  @keyframes blink {
+    to {
+      background: #c3ad00;
+    }
+  }
+  @-webkit-keyframes blink {
+    to {
+      background: #c3ad00;
+    }
+  }
+  
+  body {
+    background: grey;
+    }
+  
+  .gold {
+    color: gold;
+  }
+  .green {
+    color: green;
+  }
+  
+  .v-align {
+    vertical-align: inherit;
+  }
+  
+  div.modal-footer,
+  div.modal-body,
+  div.modal-header {
+    background-color: #000000de;
+    color: white;
+  }
