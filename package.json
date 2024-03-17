@@ -8,7 +8,7 @@
     "build": "parcel build"
   },
   "keywords": [],
-  "author": "Mattie, Adrian, Noemi, Kristin",
+  "author": "Matty, Adrian, Noemi, Kristin",
   "license": "ISC",
   "devDependencies": {
     "buffer": "^6.0.3",
