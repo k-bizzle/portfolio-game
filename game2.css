@@ -1,0 +1,91 @@
+.game-container {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 600px; /* Set a max-width for larger screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.balance {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Change the color to something noticeable */
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Add a slight background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.reel {
+    width: 100px; /* Increase width */
+    height: 100px; /* Add height for a square appearance */
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #333; /* Make border more prominent */
+    text-align: center; /* Center text */
+    font-size: 20px; /* Increase font size */
+    background-color: #fff; /* Set background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+button {
+    background-color: #4CAF50; /* A green background */
+    color: white; /* White text */
+    padding: 14px 20px; /* Some padding */
+    margin: 8px 0; /* Some space around */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0; /* Add margin for spacing */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px; /* Increase font size for visibility */
+    color: #d9534f; /* Make it stand out, change color based on message type if needed */
+}
+
+.dialogue-bubble {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: hidden; /* Start hidden */
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    top: 50%; /* Positioning from the top */
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+.hidden {
+    display: none;
+}
+
+.close-dialogue {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 20px; 
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="balanceDisplay" class="balance">Balance: $0</div>
+        <div class="slot-machine">
+            <div id="reel1" class="reel">A | A | A</div>
+            <div id="reel2" class="reel">B | B | B</div>
+            <div id="reel3" class="reel">C | C | C</div>
+        </div>
+        <input type="number" id="depositAmount" placeholder="Deposit Amount" min="1">
+        <button id="depositButton">Deposit</button>
+        <input type="number" id="numLines" placeholder="Lines (1-3)" min="1" max="3">
+        <input type="number" id="betAmount" placeholder="Bet Amount" min="1">
+        <button id="spinButton">Spin</button>
+        <div id="message"></div>
+        <div id="dialogueBubble" class="dialogue-bubble hidden">
+            <span id="closeDialogue" class="close-dialogue">&times;</span>
+            <p id="dialogueText">This is a message</p>
+        </div>
+    </div>
+    <script src="game2.js"></script>
+</body>
+</html>
