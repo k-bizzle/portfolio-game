@@ -2,7 +2,7 @@
   "name": "gameproject",
   "version": "1.0.0",
   "description": "Project for the game",
-  "source": "game.html",
+  "source": "game2.html",
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
