@@ -29,42 +29,60 @@ const SYMBOL_VALUES = {
 // Function to handle deposit input
 
 const deposit = () => {
-  while (true) {
+  while (true) {    
       const depositAmount = prompt("Enter a deposit amount: ");
-      const numberDepositAmount = parseFloat(depositAmount);
+      const num9berDepositAmount = parseFloat(depositAmount);
+      //ParseFloat() function allows deposit entered to be converted from a string to a number
+      //If it cannot convert string into a number is will return as NaN
+
       if (isNaN(numberDepositAmount) || numberDepositAmount <= 0) {
-          console.log("Invalid deposit amount, try again.");
-      } else {
-          return numberDepositAmount;
+          console.log("Invalid deposit amount, try again"); //alert
       }
-  }
+      else {
+      console.log("Deposit added to playing stash") //alert
+      return numberDepositAmount;
+          
+          }
+      }
 };
 
-
 const getNumberOfLines = () => {
-  while (true) {
-    const lines = prompt("Enter the number of lines to bet on (1-3): ");
-    const numberOfLines = parseFloat(lines);
+  while (true) {    
+      const lines = prompt("Enter the number of lines to bet on (1-3): ");
+      const numberOfLines = parseFloat(lines);
+      //ParseFloat() function allows number of lines entered to be converted from a string to a number
 
-    if (isNaN(numberOfLines) || numberOfLines <= 0 || numberOfLines > 3) {
-      console.log("Invalid number of lines, try again.");
-    } else {
+      if (isNaN(numberOfLines)) {
+          console.log("Invalid, try again"); //alert
+      }
+      else if (numberOfLines <= 0 || numberOfLines > 3) {
+          console.log("You can only bet on 1 to 3 lines, try again") //alert
+      }
+      else {
+      console.log(`Great we will bet on ${numberOfLines} lines`) //alert
+      
       return numberOfLines;
-    }
-  }
+          }
+      }
 };
 
 const getBet = (balance, lines) => {
-  while (true) {
-    const bet = prompt("Enter the bet per line: ");
-    const numberBet = parseFloat(bet);
+  while (true) {    
+      const bet = prompt("Enter the total bet per line: ");
+      const numberBet = parseFloat(bet);
+      //ParseFloat() function allows number of the bet entered to be converted from a string to a number
 
-    if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {
-      console.log("Invalid bet, try again.");
-    } else {
-      return numberBet;
-    }
-  }
+      if (isNaN(numberBet) || numberBet <= 0 ) {
+          console.log("Invalid bet, try again"); //alert
+      }
+      else if (numberBet > balance / lines) {
+          console.log("You do not have enough tokens for that bet") //alert
+      }
+      else {
+      console.log(`Great we will bet ${numberBet} tokens per line`) //alert
+      return numberBet; 
+          }
+      }
 };
 
 const spin = () => {
